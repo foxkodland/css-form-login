@@ -49,10 +49,20 @@ h2{
     pointer-events: none;
     transition: .5s;
 }
+
+/* 
+У Этого способа есть недостаток 
+- при некоррекном вводе надпись опустится на текст
+
 input:focus ~ label,
 input:valid ~ label{
 top: -5px;
+} */
+
+.open-password {
+    cursor: pointer;
 }
+
 .inputbox input {
     width: 100%;
     height: 50px;
